@@ -1,0 +1,24 @@
+﻿<Window x:Class="cal.mainpl"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:cal"
+        mc:Ignorable="d"
+        Title="Videos" Height="450" Width="800" Icon="mainlogo.png" ResizeMode="NoResize">
+    <Grid Background="Black">
+        <Button Content="Back" Width="100" Height="25" Margin="0,0,680,380" x:Name="exit_btn" Click="back"/>
+        <Button Content="Exit" Width="100" Height="25" Margin="0,0,400,380" x:Name="exit_btn1" Click="log"/>
+        <Label Content="WElCOME" Foreground="White" FontSize="30" Margin="290,0,0,0"/>
+        <Label  Content="Song1" Foreground="White" Margin="0,100,0,0" FontSize="18"/>
+        <Button Content="Play" x:Name="song" Click="song1" Width="100" Height="25" Margin="0,0,680,100"/>
+        <MediaElement Source="C:\Users\z tech\source\repos\cal\cal\Music\1.mp4" Margin="130,50,0,20" LoadedBehavior="Manual" x:Name="play_song0"/>
+        <Label Content="Song2" Foreground="White" FontSize="18" Margin="0,210,0,0"/>
+        <Button Content="Play" Click="song2" Width="100" Height="25" Margin="0,100,680,0"/>
+        <MediaElement Source="C:\Users\z tech\source\repos\cal\cal\Music\2.mp4" LoadedBehavior="Manual" x:Name="play_song2" Margin="130,50,0,20"/>
+
+        <Label Content="Song3" Foreground="White" FontSize="18" Margin="0,290,0,0"/>
+        <Button Content="Play" Click="song3" Width="100" Height="25" Margin="0,260,680,0"/>
+        <MediaElement Source="C:\Users\z tech\source\repos\cal\cal\Music\3.mp4" LoadedBehavior="Manual" x:Name="play_song3" Margin="130,50,0,20"/>
+    </Grid>
+</Window>
